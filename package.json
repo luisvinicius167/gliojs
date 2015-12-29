@@ -1,7 +1,7 @@
 {
   "name": "gliojs",
-  "version": "0.0.1",
-  "description": "Javascript library to trigger a callback when user try move out your site.",
+  "version": "0.0.3",
+  "description": "Javascript library to trigger anything you want when user try to go in the screen corners.",
   "main": "glio.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
