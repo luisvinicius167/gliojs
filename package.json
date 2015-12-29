@@ -1,12 +1,7 @@
 {
   "name": "gliojs",
-<<<<<<< HEAD
   "version": "0.0.3",
   "description": "Javascript library to trigger anything you want when user try to go in the screen corners.",
-=======
-  "version": "0.0.2",
-  "description": "Javascript library to trigger a callback when user move the mouse to the screens corners.",
->>>>>>> 69e0ff36cc53b81a9256e34dfa35727c8a6846db
   "main": "glio.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
