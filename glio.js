@@ -22,13 +22,13 @@
       }
     },
     getOutValue: function ( x, direction ) {
-      var screenWidthFragment = (parseInt(window.screenX) / 4)
+      var screenWidthFragment = (parseInt(window.screen.width) / 4)
         , outValue = (screenWidthFragment * 4) - screenWidthFragment       
       ;
       return outValue;
     },
     getScreenFragment: function () {
-      var screenWidthFragment = (parseInt(window.screenX) / 4);
+      var screenWidthFragment = (parseInt(window.screen.width) / 4);
       return screenWidthFragment;
     },
     getHeight: function ( ) {
