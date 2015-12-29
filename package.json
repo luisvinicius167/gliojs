@@ -1,18 +1,23 @@
 {
   "name": "gliojs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Javascript library to trigger a callback when user try move out your site.",
   "main": "glio.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisvinicius167/gliojs.git"
+  },
   "keywords": [
     "gliojs",
-    "move",
-    "out",
+    "moveout",
+    "goout",
     "leave",
     "exit"
   ],
+  "homepage": "http://luisvinicius167.github.io/gliojs",
   "author": "Luis Vinícius",
   "license": "MIT"
 }
