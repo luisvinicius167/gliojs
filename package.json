@@ -1,16 +1,16 @@
 {
   "name": "gliojs",
-  "version": "0.0.1",
-  "description": "Javascript library to trigger a callback when user try move out your site.",
+  "version": "0.0.2",
+  "description": "Javascript library to trigger a callback when user move the mouse to the screens corners.",
   "main": "glio.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "gliojs",
-    "moveout",
-    "goout",
-    "leave",
+    "mousemove",
+    "screencorner",
+    "move",
     "exit"
   ],
   "homepage": "http://luisvinicius167.github.io/gliojs",
