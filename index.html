@@ -20,20 +20,41 @@
   <body>
     <section class="page-header">
       <h1 class="project-name"> glio.js</h1>
-      <h2 class="project-tagline">Trigger anything you want when user try move out your site.</h2>
+      <h2 class="project-tagline">Trigger anything you want when user try to go in the screen corners. <br> Go to the points in the document and see.</h2>
       <a href="https://github.com/luisvinicius167/gliojs" class="btn">View on GitHub</a>
       <a href="https://github.com/luisvinicius167/gliojs/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/luisvinicius167/gliojs/tarball/master" class="btn">Download .tar.gz</a>
     </section>
     
     <section class="main-content">
-      <h3 class="border-left">This library works with two arguments. The direction, who at moment is just "out" and a callback, who will be triggered: <code class="code">glio(direction, callback)</code>. Try go out and look.</h3>
+    <div class="top-left is-topleft"></div>
+    <div class="top-right is-topright"></div>
+    <div class="bottom-left is-bottomleft"></div>
+    <div class="bottom-right is-bottomright"></div>
+      <h3 class="border-left">This library works with two arguments. The direction, who at moment is just "out" and a callback, who will be triggered: <code class="code">glio(direction, callback)</code>. </h3>
       <br>
       <h3><strong>Usage:</strong></h3>
       <ul>
         <li>
-          <code class="code" >glio.init("out", function () { alert("Hi."); });</code> 
+          <code class="code" >glio.init(direction, callback);</code> 
           <div class="text-code">Use the method <em>init</em> to start. The callback just trigeer one time.</div>
+        </li>
+      </ul>
+      <h3><strong>Directions:</strong></h3>
+      <ul>
+        <li>
+          <code class="code" >glio.init("top-left", function () { alert("Now is Top-left."); });</code> 
+        </li>
+        <li>
+          <code class="code" >glio.init("top-right", function () { alert("Now is Top-Right."); });</code> 
+        </li>
+        <li>
+          <code class="code" >glio.init("bottom-left", function () { alert("Now is Bottom-Left"); });</code> 
+      
+        </li>
+        <li>
+          <code class="code" >glio.init("bottom-right", function () { alert("Now is Bottom-Right."); });</code> 
+      
         </li>
       </ul>
 
@@ -44,18 +65,18 @@
     </section>
     
     <script>
-      glio.init("top-left", function () {
-        alert('Now is Top-left');
-      });
-      glio.init("top-right", function () {
-        alert('Now is Top-Right');
-      });
-      glio.init("bottom-left", function () {
-        alert('Now is Bottom-Left');
-      });
-      glio.init("bottom-right", function () {
-        alert('Now is Bottom-Right');
-      });
+        glio.init("top-left", function () {
+          alert('Now is Top-left');
+        });
+        glio.init("top-right", function () {
+          alert('Now is Top-Right');
+        });
+        glio.init("bottom-left", function () {
+          alert('Now is Bottom-Left');
+        });
+        glio.init("bottom-right", function () {
+          alert('Now is Bottom-Right');
+        });
     </script>
   </body>
 </html>

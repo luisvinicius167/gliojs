@@ -38,7 +38,7 @@
     // the value of top-right screen, for use when user pass the mouse in the area
     getWidthRightValue: function ( ) {
       var screenWidthFragment = glio.getScreenWidthFragment()
-        , topRightValue = ( screenWidthFragment * 4 ) - screenWidthFragment
+        , topRightValue = ( screenWidthFragment * 12 ) - screenWidthFragment
       ;
       return topRightValue;
     },
@@ -49,18 +49,18 @@
     },
     // The value of total screen width are divided in parts
     getScreenWidthFragment: function () {
-      var screenWidthFragment = (parseInt(window.screen.width) / 4);
+      var screenWidthFragment = (parseInt(window.innerWidth) / 12);
       return screenWidthFragment;
     },
     // The value of total screen height are divided in parts
     getScreenHeightFragment: function () {
-      var screenHeightFragment = (parseInt(window.screen.height) / 4);
+      var screenHeightFragment = (parseInt(window.innerHeight) / 12);
       return screenHeightFragment;
     },
      // the height value of bottom. this value is the same, independent the direction
     getBottomHeightValue: function ( ) {
       var screenHeightFragment = glio.getScreenHeightFragment()
-        , bottomRightValue = ( screenHeightFragment * 4 ) - screenHeightFragment
+        , bottomRightValue = ( screenHeightFragment * 12 ) - screenHeightFragment
       ;
       return bottomRightValue;
     },
@@ -69,6 +69,7 @@
       if ( directionUser === direction ) {
         return true;
       };
+      return false;
     },
     /*
      * Functions of each direction

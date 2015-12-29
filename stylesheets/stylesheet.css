@@ -7,16 +7,50 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #f5f5f5;
-  color: #333; }
+
+
+background: #6441A5; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #6441A5 , #2a0845); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #6441A5 , #2a0845); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+               
+  color: #fff; }
 
 a {
-  color: #696969;
+  color: #f5f5f5;
   text-decoration: none; }
   a:hover {
-    color: #333;
+    color: #fff;
     text-decoration: none; }
 
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right {
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+  border-radius: 100%;
+}
+.is-topleft {
+  position: fixed;
+  top: .5rem;
+  left: .5rem;
+}
+.is-topright {
+  position: fixed;
+  top: .5rem;
+  right: .5rem; 
+}
+.is-bottomleft {
+ position: fixed;
+  bottom: .5rem;
+  left: .5rem; 
+}
+.is-bottomright  {
+  position: fixed;
+  bottom: .5rem;
+  right: .5rem; 
+}
 .border-left {
   display: block;
   border-left: 2px solid #949393;
@@ -26,7 +60,7 @@ a {
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
-  color: #848484;
+  color: #f5f5f5;
   background-color: rgba(255, 255, 255, 0.08);
 
   -webkit-box-sizing: border-box;
@@ -37,17 +71,17 @@ a {
     margin-left: 1rem; }
 
 .btn:hover {
-  color: rgb(56, 56, 56);
+  color: #fff;
   text-decoration: none; }
 
 .main-content .code {
-  background-color: #333;
-  color: #CCC;
-  -webkit-transition: color 1s; 
-     -moz-transition: color 1s; 
-      -ms-transition: color 1s; 
-       -o-transition: color 1s; 
-          transition: color 1s; 
+  background-color: #2E0C4C;
+  color: #f5f5f5;
+  -webkit-transition: color .25s; 
+     -moz-transition: color .25s; 
+      -ms-transition: color .25s; 
+       -o-transition: color .25s; 
+          transition: color .25s; 
 }
   .main-content .code:hover {
     color: #EECD1F;
@@ -84,9 +118,11 @@ a {
       margin-left: 0; } }
 
 .page-header {
-  color: #333;
+  color: #fff;
   text-align: center;
-  background-color: #f5f5f5; 
+background: #6441A5; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #6441A5 , #2a0845); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #6441A5 , #2a0845); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 @media screen and (min-width: 64em) {
@@ -144,15 +180,15 @@ a {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-weight: normal;
-  color: #333; }
+  color: #fff; }
 .main-content p {
   margin-bottom: 1em; }
 .main-content code {
   padding: 2px 4px;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.9rem;
-  color: #383e41;
-  background-color: #f3f6fa;
+  color: #fff;
+  background-color: ##2E0C4C;
   border-radius: 0.3rem; }
 .main-content pre {
   padding: 0.8rem;
