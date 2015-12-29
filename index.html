@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title> glio.js | Javascript library to trigger a callback when user try move out your site </title>
+    <title> glio.js | trigger anything you want when user try move out your site.  </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -10,35 +10,43 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <!-- Facebook Meta -->
     <meta property="og:locale" content="en">
-    <meta property="og:url" content="http://luisvinicius167.github.io/_simplejs">
-    <meta property="og:title" content="_simple.js | a small library for beginners">
-    <meta property="og:site_name" content="_simple.js">
-    <meta property="og:description" content="A small library for beginners">
+    <meta property="og:url" content="http://luisvinicius167.github.io/gliojs">
+    <meta property="og:title" content="Trigger anything you want when user try move out your site.">
+    <meta property="og:site_name" content="gliojs">
+    <meta property="og:description" content="trigger anything you want when user try move out your site.">
     <meta property="og:type" content="website">
   </head>
   <body>
     <section class="page-header">
       <h1 class="project-name"> glio.js</h1>
-      <h2 class="project-tagline">A small Javascript library to trigger a callback when user try move out your site. </h2>
+      <h2 class="project-tagline">Trigger anything you want when user try move out your site.</h2>
       <a href="https://github.com/luisvinicius167/_simplejs" class="btn">View on GitHub</a>
       <a href="https://github.com/luisvinicius167/_simplejs/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/luisvinicius167/_simplejs/tarball/master" class="btn">Download .tar.gz</a>
     </section>
     
     <section class="main-content">
-      <h3 class="border-left">This library works with two arguments. The direction, who at moment is just "out" and a callback. See: <code class="code">glio(direction, callback)</code></h3>
-      <h4>Examples:</h4>
+      <h3 class="border-left">This library works with two arguments. The direction, who at moment is just "out" and a callback, who will be triggered: <code class="code">glio(direction, callback)</code></h3>
+      <br>
+      <h3><strong>Usage:</strong></h3>
       <ul>
         <li>
-          <code class="code" >glio("out", function () { alert("Hi."); });</code> 
-          <div class="text-code">Sets the color of the Text to the element.</div>
+          <code class="code" >glio.init("out", function () { alert("Hi."); });</code> 
+          <div class="text-code">Use the method <em>init</em> to start. The callback just trigeer one time.</div>
         </li>
+      </ul>
 
     <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/luisvinicius167/_simplejs"> gliojs</a> is maintained by <a href="https://github.com/luisvinicius167">luisvinicius167</a>.</span>
       </footer>
 
     </section>
+    <script src="js/glio.min.js"></script>
+    <script>
+    glio.init("out", function () {
+      alert('Hi. Star the project, if you liked');
+    });
+    </script>
   </body>
 </html>
 
