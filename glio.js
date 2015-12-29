@@ -7,13 +7,15 @@
           var pointX = event.x
             , pointY = event.y
           ;
-          if ( glio.getDirection( direction, "top-left" ) ) {
-            glio.callTopleft(pointX, pointY, callback);
-          } else if ( glio.getDirection( direction, "top-right" ) ) {
-            glio.callTopRight(pointX, pointY, callback);
+          if ( glio.status === "inactive" ) {
+            if ( glio.getDirection( direction, "top-left" ) ) {
+              glio.callTopleft(pointX, pointY, callback);
+            } 
+            else if ( glio.getDirection( direction, "top-right" ) ) {
+              glio.callTopRight(pointX, pointY, callback);
+            }
           }
-          }
-        );
+        });
       }
     },
     // the value of top-right screen, for use when user pass the mouse
