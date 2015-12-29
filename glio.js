@@ -7,40 +7,49 @@
           var pointX = event.x
             , pointY = event.y
           ;
-          if ( direction === "top-left" && glio.status === "inactive" ) {
-              if ( pointX <= glio.getScreenFragment() && pointY <= glio.getHeight() ) {
-                glio.status = "active";
-                callback();
-              };
-          } else if ( direction === "top-right" && glio.status === "inactive" ) {
-              if ( pointX > glio.getTopRightValue() && pointY <= glio.getHeight() ) {
-                glio.status = "active";
-                callback();
-              };
-            }
+          if ( glio.getDirection( direction, "top-left" ) ) {
+            glio.callTopleft(pointX, pointY, callback);
+          } else if ( glio.getDirection( direction, "top-right" ) ) {
+            glio.callTopRight(pointX, pointY, callback);
+          }
           }
         );
       }
     },
+    // the value of top-right screen, for use when user pass the mouse
+    // in the area
     getTopRightValue: function ( ) {
       var screenWidthFragment = glio.getScreenFragment()
         , topRightValue = ( screenWidthFragment * 4 ) - screenWidthFragment
       ;
       return topRightValue;
     },
+    // The value of total screen are divided in parts
     getScreenFragment: function () {
       var screenWidthFragment = (parseInt(window.screen.width) / 4);
       return screenWidthFragment;
     },
-    getHeight: function ( ) {
+    // get the value of top height
+    getTopHeight: function ( ) {
       var sHeight = 50;
       return sHeight;
     },
-    getPlataform: function ( os ) {
-      var platform = navigator.platform;
-      if ( platform.search(os) != -1 ) {
+    getDirection: function ( directionUser, direction ) {
+      if ( directionUser === direction ) {
         return true;
-      }
+      };
+    },
+    callTopleft: function ( x, y, callback ) {
+      if ( x <= glio.getScreenFragment() && y <= glio.getTopHeight() ) {
+        glio.status = "active";
+        callback();
+      };
+    },
+    callTopRight: function ( x, y, callback ) {
+      if ( x > glio.getTopRightValue() && y <= glio.getTopHeight() ) {
+        glio.status = "active";
+        callback();
+      };         
     }
   };
   if (!window.glio) {
