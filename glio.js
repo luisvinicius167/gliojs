@@ -1,4 +1,4 @@
-(function ( window , document, navigator) {
+;(function ( window , document, navigator ) {
   var glio = {
     status: "inactive",
     $public: {
@@ -7,25 +7,26 @@
           var pointX = event.x
             , pointY = event.y
           ;
-          if ( direction === "out" && glio.status === "inactive" ) {
-            if ( glio.getPlataform("Linux") ) {
+          if ( direction === "top-left" && glio.status === "inactive" ) {
               if ( pointX <= glio.getScreenFragment() && pointY <= glio.getHeight() ) {
                 glio.status = "active";
                 callback();
-              }
-            } else if ( pointX > glio.getOutValue() && pointY <= glio.getHeight() ) {
-              glio.status = "active";
-              callback();
+              };
+          } else if ( direction === "top-right" && glio.status === "inactive" ) {
+              if ( pointX > glio.getTopRightValue() && pointY <= glio.getHeight() ) {
+                glio.status = "active";
+                callback();
+              };
             }
-          };
-        });
+          }
+        );
       }
     },
-    getOutValue: function ( x, direction ) {
-      var screenWidthFragment = (parseInt(window.screen.width) / 4)
-        , outValue = (screenWidthFragment * 4) - screenWidthFragment       
+    getTopRightValue: function ( ) {
+      var screenWidthFragment = glio.getScreenFragment()
+        , topRightValue = ( screenWidthFragment * 4 ) - screenWidthFragment
       ;
-      return outValue;
+      return topRightValue;
     },
     getScreenFragment: function () {
       var screenWidthFragment = (parseInt(window.screen.width) / 4);
@@ -42,8 +43,7 @@
       }
     }
   };
-
   if (!window.glio) {
     window.glio = glio.$public;
   };
-}(window, document, navigator));
+}( window, document, navigator ));
