@@ -8,15 +8,15 @@
     config: {
       screenWidthFragment: 12,  // the width of screen : 12
       centerTopHeight: 10, // the value of height to trigger a callback on center-top
-      heightTopLeft: 50,  // the value of height when top-left direction is set
-      heightTopRight: 50, // the value of height when top-right direction is set
+      heightTopLeft: 30,  // the value of height when top-left direction is set
+      heightTopRight: 30, // the value of height when top-right direction is set
     },
     // glio methods status
     statusTopLeft: "inactive",
     statusTopRight: "inactive",
     statusBottomLeft: "inactive",
     statusBottomRight: "inactive",
-    statusCenterTop: "inactive",
+    statusTop: "inactive",
     init: function ( ) {
       // return a Array with the methods
       glio.methods = Array.prototype.slice.call(arguments);
@@ -34,8 +34,8 @@
         else if ( glio.getDirection( index[0], "bottom-left" ) ) {
           glio.bottomLeftFn = glio.trigger(index[1]);
         }
-        else if ( glio.getDirection( index[0], "center-top" ) ) {
-          glio.centerTopFn = glio.trigger(index[1]);
+        else if ( glio.getDirection( index[0], "top" ) ) {
+          glio.TopFn = glio.trigger(index[1]);
         }
       });
       // Event mousemove just one time
@@ -43,6 +43,7 @@
         var pointX = event.pageX
           , pointY = event.pageY
         ;
+        console.log("MouseX: ", pointX, " MouseY: ", pointY);
         if ( typeof glio.topLeftFn === "function" &&  glio.statusTopLeft === "inactive" ) {
           glio.callTopleft(pointX, pointY, glio.topLeftFn);
         }
@@ -55,8 +56,8 @@
         if (typeof glio.bottomRightFn === "function" && glio.statusBottomRight === "inactive" ) {
           glio.callBottomRight(pointX, pointY, glio.bottomRightFn);
         }
-        if (typeof glio.centerTopFn === "function" && glio.statusCenterTop === "inactive" ) {
-          glio.callCenterTop(pointX, pointY, glio.centerTopFn);
+        if (typeof glio.TopFn === "function" && glio.statusTop === "inactive" ) {
+          glio.callCenterTop(pointX, pointY, glio.TopFn);
         }
       });
     },
@@ -129,7 +130,7 @@
     },
     callCenterTop: function ( x, y, callback ) {
       if ( x > glio.getScreenWidthFragment() && x < glio.getWidthRightValue() &&  y <= glio.config.centerTopHeight ) {
-        glio.statusCenterTop = "active";
+        glio.statusTop = "active";
         callback();
       };
     },
