@@ -32,29 +32,28 @@
     <div class="top-right is-topright"></div>
     <div class="bottom-left is-bottomleft"></div>
     <div class="bottom-right is-bottomright"></div>
-      <h3 class="border-left">This library works with two arguments: 'direction' and a 'callback', who will be triggered. <code class="code">glio(direction, callback)</code>. </h3>
+      <h3 class="border-left">The arguments are a Arrays, where the first index is the direction and the second is a callback. <code class="code">glio.init( [ direction, callback ], [ direction, callback ] );</code>. </h3>
       <br>
       <h3><strong>Usage:</strong></h3>
       <ul>
         <li>
-          <code class="code" >glio.init(direction, callback);</code> 
+          <code class="code" >glio.init( [ direction, callback ] );</code> 
           <div class="text-code">Use the method <em>init</em> to start. The callback just trigeer one time.</div>
         </li>
       </ul>
       <h3><strong>Directions:</strong></h3>
       <ul>
         <li>
-          <code class="code" >glio.init("top-left", function () { alert("Now is Top-left."); });</code> 
+          <code class="code" >top-left</code> 
         </li>
         <li>
-          <code class="code" >glio.init("top-right", function () { alert("Now is Top-Right."); });</code> 
+          <code class="code" >top-right</code> 
         </li>
         <li>
-          <code class="code" >glio.init("bottom-left", function () { alert("Now is Bottom-Left"); });</code> 
-      
+          <code class="code" >bottom-left</code>
         </li>
         <li>
-          <code class="code" >glio.init("bottom-right", function () { alert("Now is Bottom-Right."); });</code> 
+          <code class="code" >bottom-right</code> 
       
         </li>
       </ul>
@@ -67,19 +66,26 @@
 
     <script src="js/glio.min.js"></script>
     <script>
-        glio.init("top-left", function () {
-          alert('Now is Top-left');
-        });
-        glio.init("top-right", function () {
-          alert('Now is Top-Right');
-        });
-        glio.init("bottom-left", function () {
-          alert('Now is Bottom-Left');
-        });
-        glio.init("bottom-right", function () {
-          alert('Now is Bottom-Right');
-        });
+    glio.init(
+      ['top-left', function () {
+          alert('this is top-left');
+        }
+      ],
+      [ 'top-right', function () {
+          alert('this is top-right');
+        }
+      ],
+      ['bottom-left', function () {
+          alert('this is bottom-left');
+        }
+      ],
+      ['bottom-right', function () {
+         alert('this is bottom-right'); 
+        }
+      ] 
+    );
     </script>
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
