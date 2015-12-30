@@ -3,8 +3,8 @@ Trigger anything you want when user try move out your site. Less than 1kb.
 
 ## Usage:
 Import the library ```<script src='glio.min.js'></script>``` in your site.<br><br>
-This library works with two arguments. The direction and a callback, who will be triggered: <br>
-```glio( direction, callback )```.
+The arguments are a Arrays, where the first index is the direction and the second is a callback. <br>
+```glio( [ direction, callback ] )```.
 
 ## Directions:
 * top-left
