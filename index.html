@@ -8,6 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" href="vendor/sweetalert.css">
     <!-- Facebook Meta -->
     <meta property="og:locale" content="en">
     <meta property="og:url" content="http://luisvinicius167.github.io/gliojs">
@@ -43,6 +44,9 @@
       </ul>
       <h3><strong>Directions:</strong></h3>
       <ul>
+      <li>
+          <code class="code" >top</code> 
+        </li>
         <li>
           <code class="code" >top-left</code> 
         </li>
@@ -54,10 +58,26 @@
         </li>
         <li>
           <code class="code" >bottom-right</code> 
-      
         </li>
       </ul>
-
+    <h3>
+      <strong>Configurations:</strong>
+    </h3>
+      <ul>
+      Set the configs before the <em>init</em> method. <code class="code" >glio.config.key = value;</code> 
+      <li>
+          <code class="code" >screenWidthFragment:</code> the quantity of parts the height and width screen will be divided. Default: 12.
+        </li>
+        <li>
+          <code class="code" >centerTopHeight:</code> height of 'center-top' direction. When the mouse is equal or major this value, the callback is triggered. Default: 10.
+        </li>
+        <li>
+          <code class="code" >heightTopLeft:</code> height of 'top-left' direction. When the mouse is equal or major this value, the callback is triggered. Default: 30.
+        </li>
+        <li>
+          <code class="code" >heightTopLeft:</code> height of 'top-right' direction. When the mouse is equal or major this value, the callback is triggered. Default: 30.
+        </li>
+      </ul>
     <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/luisvinicius167/_simplejs"> gliojs</a> is maintained by <a href="https://github.com/luisvinicius167">luisvinicius167</a>.</span>
       </footer>
@@ -65,8 +85,21 @@
     </section>
 
     <script src="js/glio.min.js"></script>
+    <script src="vendor/sweetalert.min.js"></script>
     <script>
     glio.init(
+      ['top', function () {
+          swal({   
+            title: "Hey! ",   
+            text: "Before you leave, star this project and share with you dev friends! Ah, this is the top direction!",   
+            imageUrl: "img/github.png" 
+          });
+
+          setTimeout(function () {
+            window.location = "https://github.com/luisvinicius167/gliojs";
+          }, 6000);
+        }
+      ],
       ['top-left', function () {
           alert('this is top-left');
         }
