@@ -1,6 +1,6 @@
 {
   "name": "gliojs",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Javascript library to trigger anything you want when user try to go in the screen corners.",
   "main": "glio.js",
   "scripts": {
