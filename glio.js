@@ -9,8 +9,8 @@
     $public: {
       init: function ( direction, callback ) {
         document.body.addEventListener('mousemove', function( event ) {
-          var pointX = event.x
-            , pointY = event.y
+          var pointX = event.pageX
+            , pointY = event.pageY
           ;
             if ( glio.getDirection( direction, "top-left" ) ) {
               if ( glio.statusTopLeft === "inactive" ) {  
