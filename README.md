@@ -1,5 +1,5 @@
 # glio.js
-Trigger anything you want when user try move out your site. Less than 1kb.
+Trigger anything you want when user try move out your site.
 
 ## Usage:
 Import the library ```<script src='glio.min.js'></script>``` in your site.<br><br>
