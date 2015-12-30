@@ -16,7 +16,7 @@ The arguments are a Arrays, where the first index is the direction and the secon
 * top-left and top-right
 ```
     glio.init(
-      ['top-left', function () {
+      [ 'top-left', function () {
           alert('this is top-left');
         }
       ],
@@ -30,7 +30,7 @@ The arguments are a Arrays, where the first index is the direction and the secon
 * all directions
 ```
   glio.init(
-    ['top-left', function () {
+    [ 'top-left', function () {
         alert('this is top-left');
       }
     ],
@@ -38,11 +38,11 @@ The arguments are a Arrays, where the first index is the direction and the secon
         alert('this is top-right');
       }
     ],
-    ['bottom-left', function () {
+    [ 'bottom-left', function () {
         alert('this is bottom-left');
       }
     ],
-    ['bottom-right', function () {
+    [ 'bottom-right', function () {
         alert('this is bottom-right'); 
       }
     ] 
