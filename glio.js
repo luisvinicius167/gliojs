@@ -43,7 +43,7 @@
         var pointX = event.pageX
           , pointY = event.pageY
         ;
-        console.log("MouseX: ", pointX, " MouseY: ", pointY);
+        
         if ( typeof glio.topLeftFn === "function" &&  glio.statusTopLeft === "inactive" ) {
           glio.callTopleft(pointX, pointY, glio.topLeftFn);
         }
