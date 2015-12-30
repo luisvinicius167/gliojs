@@ -1,5 +1,5 @@
 # glio.js
-Trigger anything you want when user try move out your site.
+Trigger anything you want when user try to go in the screen corners.
 
 ## Usage:
 Import the library ```<script src='glio.min.js'></script>``` in your site.<br><br>
