@@ -12,4 +12,41 @@ The arguments are a Arrays, where the first index is the direction and the secon
 * bottom-left
 * bottom-right
 
+## Example:
+* top-left and top-right
+```
+    glio.init(
+      ['top-left', function () {
+          alert('this is top-left');
+        }
+      ],
+      [ 'top-right', function () {
+          alert('this is top-right');
+        }
+      ]
+    );
+```
+
+* all directions
+```
+  glio.init(
+    ['top-left', function () {
+        alert('this is top-left');
+      }
+    ],
+    [ 'top-right', function () {
+        alert('this is top-right');
+      }
+    ],
+    ['bottom-left', function () {
+        alert('this is bottom-left');
+      }
+    ],
+    ['bottom-right', function () {
+        alert('this is bottom-right'); 
+      }
+    ] 
+  );
+```
+    
 ### See the demostration <a href="http://luisvinicius167.github.io/gliojs/"> here</a>.
