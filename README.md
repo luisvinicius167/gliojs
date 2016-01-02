@@ -1,8 +1,6 @@
 # glio.js
-Trigger anything you want when user try to go in the screen corners. 
+Detects if the mouse of a user leaves the viewport / document borders of your website and when this happens, trigger your callback.
 <br><a href="https://github.com/luisvinicius167/gliojs/blob/master/README-PT.md"> Portuguese documentation. </a> 
-
-<b>glio</b> detects if the mouse of a user leaves the viewport / document borders of your website — and when this happens, it trigger your callback.
 
 ### Reasons for use:
 * Increase your conversion rates!
