@@ -20,7 +20,7 @@ The arguments are a Arrays, where the first index is the direction and the secon
 glio( [ direction, callback ] );
 ```
 
-## Directions:
+## 5 Directions:
 * top
 * top-left
 * top-right
