@@ -16,7 +16,9 @@ Detects if the mouse of a user leaves the viewport / document borders of your we
 
 ## Usage:
 The arguments are a Arrays, where the first index is the direction and the second is a callback. <br>
-```glio( [ direction, callback ] )```.
+```javascript 
+glio( [ direction, callback ] )
+```
 
 ## Directions:
 * top
@@ -27,7 +29,7 @@ The arguments are a Arrays, where the first index is the direction and the secon
 
 ## Example:
 * top-left and top-right
-```
+```javascript
     glio.init(
       [ 'top-left', function () {
           alert('this is top-left');
@@ -41,7 +43,7 @@ The arguments are a Arrays, where the first index is the direction and the secon
 ```
 
 * all directions
-```
+```javascript
   glio.init(
     [ 'top', function () {
         alert('this is top.');
