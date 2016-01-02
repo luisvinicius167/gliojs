@@ -7,10 +7,15 @@ Detects if the mouse of a user leaves the viewport / document borders of your we
 * Give visitors reasons to stay!
 * Grab your users’ attention!
 
-###  How it works: <a href="http://luisvinicius167.github.io/gliojs/"> Demo </a>
+####  How it works: <a href="http://luisvinicius167.github.io/gliojs/"> Demo </a>
+
+### How to install:
+#### Manual:
+*Import the library glio.min.js in 'dist' folder in your site. ```<script src='glio.min.js'></script>```
+#### Bower:
+* ``` bower install glio.js ```
 
 ## Usage:
-Import the library glio.min.js in 'dist' folder in your site. ```<script src='glio.min.js'></script>```<br><br>
 The arguments are a Arrays, where the first index is the direction and the second is a callback. <br>
 ```glio( [ direction, callback ] )```.
 
