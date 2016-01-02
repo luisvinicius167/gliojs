@@ -5,7 +5,7 @@ Trigger anything you want when user try to go in the screen corners.
 ###  How it works: <a href="http://luisvinicius167.github.io/gliojs/"> Demo </a>
 
 ## Usage:
-Import the library ```<script src='glio.min.js'></script>``` in your site.<br><br>
+Import the library glio.min.js in folder lib in your site.```<script src='glio.min.js'></script>```<br><br>
 The arguments are a Arrays, where the first index is the direction and the second is a callback. <br>
 ```glio( [ direction, callback ] )```.
 
@@ -65,3 +65,5 @@ The arguments are a Arrays, where the first index is the direction and the secon
  * heightTopRight: height of 'top-right' direction. When the mouse is equal or major this value, the callback is triggered. <i>Default: 30.</i>
 
 ### See the demostration <a href="http://luisvinicius167.github.io/gliojs/"> here</a>.
+
+This software is licensed under the MIT License.
