@@ -1,6 +1,14 @@
 # glio.js
 Dispare um callback quando o usuário levar o mouse em uma das direções dos cantos da tela
+<b>glio</b> detecta se o mouse do usuário deixa as bordas do viewport / documento de seu site - e quando isso acontece, o callback é acionado.
+
 ###  Como Funciona: <a href="http://luisvinicius167.github.io/gliojs/"> Demo </a>
+
+### Razões para uso:
+* Aumentar suas taxas de conversão!
+* Dê aos visitantes razões para ficar!
+* Agarrar a atenção de seus usuários!
+
 
 ## Modo de Uso:
 Importe a biblioteca glio.min.js que está na pasta 'dist' dentro do seu site. ```<script src='glio.min.js'></script>```<br><br>
