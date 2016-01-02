@@ -10,10 +10,10 @@ Detecte se o mouse do usuário deixa as bordas do viewport ou documento de seu s
 
 
 ## Como instalar:
-#### Manual:
-* Importe a biblioteca glio.min.js que está na pasta 'dist' dentro do seu site ```<script src='glio.min.js'></script>``` <br>
+#### via Manual:
+* Importe a biblioteca glio.min.js que está na pasta 'dist' dentro do seu site ```<script src='glio.min.js'></script>``` 
 
-#### Bower:
+#### via Bower:
 * ``` bower install glio.js ```
 
 ## Uso:
