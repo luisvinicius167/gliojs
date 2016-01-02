@@ -2,7 +2,9 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title> glio.js | Trigger anything you want when user try to go in the screen corners.  </title>
+    <title> glio.js | Detects if the mouse of a user leaves the viewport/document borders of your website</title>
+    <meta name="keywords" content="detect mouse, exit popups, glio, gliojs, glio.js">
+    <meta name="description" content="Detects if the mouse of a user leaves the viewport/document borders of your website and when this happens, trigger your callback.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -14,7 +16,7 @@
     <meta property="og:url" content="http://luisvinicius167.github.io/gliojs">
     <meta property="og:title" content="glio.js">
     <meta property="og:site_name" content="glio.js">
-    <meta property="og:description" content="Trigger anything you want when user try to go in the screen corners.">
+    <meta property="og:description" content="Detects if the mouse of a user leaves the viewport/document borders of your website and when it happens, trigger your callback.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="http://luisvinicius167.github.io/gliojs/img/logoglio.png">
     <meta property="og:image:type" content="image/png">
@@ -22,7 +24,7 @@
   <body>
     <section class="page-header">
       <h1 class="project-name"> glio.js</h1>
-      <h2 class="project-tagline">Trigger anything you want when user try to go in the screen corners. <br> Go to the points in the document and see.</h2>
+      <h2 class="project-tagline">Detects if the mouse of a user leaves the viewport/document borders <br> of your website and when this happens, trigger your callback.</h2>
       <a href="https://github.com/luisvinicius167/gliojs" class="btn">Star this Project</a>
       <a href="https://github.com/luisvinicius167/gliojs/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/luisvinicius167/gliojs/tarball/master" class="btn">Download .tar.gz</a>
@@ -33,16 +35,18 @@
     <div class="top-right is-topright"></div>
     <div class="bottom-left is-bottomleft"></div>
     <div class="bottom-right is-bottomright"></div>
-      <h3 class="border-left">The arguments are a Arrays, where the first index is the direction and the second is a callback. <code class="code">glio.init( [ direction, callback ], [ direction, callback ] );</code>. </h3>
+      <h3 class="border-left"><strong>Reasons for use:</strong> increase your conversion rates, give visitors reasons to stay and grab your users’ attention! </h3>
+      
       <br>
+
       <h3><strong>Usage:</strong></h3>
       <ul>
         <li>
           <code class="code" >glio.init( [ direction, callback ] );</code> 
-          <div class="text-code">Use the method <em>init</em> to start. The callback just trigeer one time.</div>
+          <div class="text-code">Use the method <em>init</em> to start. You can pass 5 arrays with all direcations, if you want. The callback just trigeer one time.</div>
         </li>
       </ul>
-      <h3><strong>Directions:</strong></h3>
+      <h3><strong>5 Directions:</strong></h3>
       <ul>
       <li>
           <code class="code" >top</code>
