@@ -1,5 +1,6 @@
 # glio.js
-Dispare um callback quando o usuário levar o mouse em uma das direções dos cantos da tela
+Dispare um callback quando o usuário levar o mouse em uma das direções dos cantos da tela.<br>
+
 <b>glio</b> detecta se o mouse do usuário deixa as bordas do viewport / documento de seu site - e quando isso acontece, o callback é acionado.
 
 ###  Como Funciona: <a href="http://luisvinicius167.github.io/gliojs/"> Demo </a>
