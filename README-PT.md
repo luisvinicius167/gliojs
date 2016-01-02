@@ -3,7 +3,7 @@ Dispare um callback quando o usuário levar o mouse em uma das direções dos ca
 ###  Como Funciona: <a href="http://luisvinicius167.github.io/gliojs/"> Demo </a>
 
 ## Modo de Uso:
-Importe a biblioteca em seu código ```<script src='glio.min.js'></script>``` dentro do seu site.<br><br>
+Importe a biblioteca glio.min.js que está na pasta 'dist' dentro do seu site. ```<script src='glio.min.js'></script>```<br><br>
 Os argumentos são passados como um Array, onde o primeiro argumento dentro do array é a direção e o segundo é o callback. Você pode colocar até 5 arrays com cada posição dentro do método init. <br>
 ```glio( [ direction, callback ] )```.
 

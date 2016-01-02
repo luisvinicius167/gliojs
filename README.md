@@ -5,7 +5,7 @@ Trigger anything you want when user try to go in the screen corners.
 ###  How it works: <a href="http://luisvinicius167.github.io/gliojs/"> Demo </a>
 
 ## Usage:
-Import the library glio.min.js in folder lib in your site.```<script src='glio.min.js'></script>```<br><br>
+Import the library glio.min.js in 'dist' folder in your site. ```<script src='glio.min.js'></script>```<br><br>
 The arguments are a Arrays, where the first index is the direction and the second is a callback. <br>
 ```glio( [ direction, callback ] )```.
 
