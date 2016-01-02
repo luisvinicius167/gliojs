@@ -40,8 +40,8 @@
       });
       // Event mousemove just one time
       document.body.addEventListener('mousemove', function( event ) {
-        var pointX = event.pageX
-          , pointY = event.pageY
+        var pointX = event.clientX
+          , pointY = event.clientY
         ;
         
         if ( typeof glio.topLeftFn === "function" &&  glio.statusTopLeft === "inactive" ) {
@@ -57,7 +57,7 @@
           glio.callBottomRight(pointX, pointY, glio.bottomRightFn);
         }
         if (typeof glio.TopFn === "function" && glio.statusTop === "inactive" ) {
-          glio.callCenterTop(pointX, pointY, glio.TopFn);
+          glio.callTop(pointX, pointY, glio.TopFn);
         }
       });
     },
@@ -70,7 +70,7 @@
       var screenWidthFragment = glio.getScreenWidthFragment()
         , topRightValue = ( screenWidthFragment * glio.config.screenWidthFragment ) - screenWidthFragment
       ;
-      return topRightValue;
+      return parseInt(topRightValue);
     },
     // get the value of top height
     getTopHeight: function ( ) {
@@ -128,11 +128,19 @@
         callback();
       };
     },
-    callCenterTop: function ( x, y, callback ) {
-      if ( x > glio.getScreenWidthFragment() && x < glio.getWidthRightValue() &&  y <= glio.config.centerTopHeight ) {
-        glio.statusTop = "active";
-        callback();
-      };
+    // array to use in the callTop
+    positionsTopY: [],
+    callTop: function (x, y, callback ) {
+      if ( y > (glio.config.centerTopHeight + 1)) {
+        glio.positionsTopY.push(y);
+      }
+      if ( x > glio.getScreenWidthFragment() && x < glio.getWidthRightValue() ) {
+        // check if the user mouse direction is bottom to top
+        if ( y <= glio.config.centerTopHeight && glio.positionsTopY[0] > glio.config.centerTopHeight ) {
+          glio.statusTop = "active";
+          callback();
+        }
+      }
     },
     // return only the methods init and config
     start: function () {
