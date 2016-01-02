@@ -1,5 +1,7 @@
 # glio.js
 Trigger anything you want when user try to go in the screen corners.
+<br><a href="https://github.com/luisvinicius167/gliojs/README-PT.md"> Portuguese documentation. </a> 
+
 ###  How it works: <a href="http://luisvinicius167.github.io/gliojs/"> Demo </a>
 
 ## Usage:
