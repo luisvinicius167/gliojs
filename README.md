@@ -11,7 +11,7 @@ Detects if the mouse of a user leaves the viewport / document borders of your we
 ## Install:
 #### Manual:
 *Import the library glio.min.js in 'dist' folder in your site. ```<script src='glio.min.js'></script>```
-#### Bower:
+#### Install using Bower:
 * ``` bower install glio.js ```
 
 ## Usage:
