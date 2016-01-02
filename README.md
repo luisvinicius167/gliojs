@@ -1,6 +1,6 @@
 # glio.js
 Trigger anything you want when user try to go in the screen corners.
-###  <a href="http://luisvinicius167.github.io/gliojs/"> Demo </a>.
+###  How it works: <a href="http://luisvinicius167.github.io/gliojs/"> Demo </a>
 
 ## Usage:
 Import the library ```<script src='glio.min.js'></script>``` in your site.<br><br>
