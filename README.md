@@ -1,15 +1,14 @@
 # glio.js
 Detects if the mouse of a user leaves the viewport / document borders of your website and when this happens, trigger your callback.
-<br><a href="https://github.com/luisvinicius167/gliojs/blob/master/README-PT.md"> Portuguese documentation. </a> 
+<br><a href="https://github.com/luisvinicius167/gliojs/blob/master/README-PT.md"> Portuguese documentation. </a>
+####  How it works: <a href="http://luisvinicius167.github.io/gliojs/"> Demo </a>
 
 ### Reasons for use:
 * Increase your conversion rates!
 * Give visitors reasons to stay!
 * Grab your users’ attention!
 
-####  How it works: <a href="http://luisvinicius167.github.io/gliojs/"> Demo </a>
-
-### How to install:
+## Install:
 #### Manual:
 *Import the library glio.min.js in 'dist' folder in your site. ```<script src='glio.min.js'></script>```
 #### Bower:
