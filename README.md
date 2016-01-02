@@ -17,7 +17,7 @@ Detects if the mouse of a user leaves the viewport / document borders of your we
 ## Usage:
 The arguments are a Arrays, where the first index is the direction and the second is a callback. <br>
 ```javascript 
-glio( [ direction, callback ] )
+glio( [ direction, callback ] );
 ```
 
 ## Directions:
