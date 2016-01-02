@@ -1,7 +1,7 @@
 {
   "name": "gliojs",
-  "version": "0.0.5",
-  "description": "Javascript library to trigger anything you want when user try to go in the screen corners.",
+  "version": "0.0.6",
+  "description": "Detects if the mouse of a user leaves the viewport / document borders of your website — and when this happens,  trigger your callback",
   "main": "glio.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

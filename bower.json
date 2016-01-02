@@ -1,0 +1,25 @@
+{
+  "name": "glio.js",
+  "description": "Detects if the mouse of a user leaves the viewport / document borders of your website — and when this happens,  trigger your callback",
+  "main": "dist/glio.min.js",
+  "authors": [
+    "Luis Vinícius < dev_luis@hotmail.com >"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "glio.js",
+    "mousemove",
+    "screencorner",
+    "detectmouse",
+    "exitpopup"
+  ],
+  "homepage": "http://luisvinicius167.github.io/gliojs/",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
