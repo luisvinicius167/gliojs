@@ -76,3 +76,5 @@ Os argumentos são passados como um Array, onde o primeiro argumento dentro do a
  * heightTopRight: altura da direção 'top-right'. Quando o mouse do usuário tiver a altura menor ou igual a esse valor, o callback será disparado. <i>Padrão: 30.</i>
 
 ### Veja a demonstração <a href="http://luisvinicius167.github.io/gliojs/"> aqui</a>.
+
+MIT license.
