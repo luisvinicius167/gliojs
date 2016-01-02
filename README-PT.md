@@ -1,5 +1,5 @@
 # glio.js
-Detecte se o mouse do usuário deixa as bordas do viewport ou documento de seu site e quando isso acontecer, dispare um callback.
+Detecte se o mouse do usuário for para as bordas do viewport/documento de seu site ou sair dele, e quando isso acontecer, dispare um callback.
 
 ####  Como Funciona: <a href="http://luisvinicius167.github.io/gliojs/"> Demo </a>
 
