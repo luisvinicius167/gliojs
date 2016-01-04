@@ -1,8 +1,8 @@
 # gliojs
-Detects if the mouse of a user leaves the viewport / document borders of your website and when this happens, trigger your callback. <a href="http://luisvinicius167.github.io/gliojs/"> Demo. </a>
-<br><a href="https://github.com/luisvinicius167/gliojs/blob/master/README-PT.md"> Portuguese documentation. </a>
+Detects if the mouse of a user leaves the viewport / document borders of your website and when this happens, trigger your callback. <a href="https://github.com/luisvinicius167/gliojs/blob/master/README-PT.md"> Portuguese documentation. </a>
+<br>
+<a href="http://luisvinicius167.github.io/gliojs/"> Demo. </a>
 
-#### Browser Support:
 <table><thead>
 <tr>
 <th align="center"><a href="https://camo.githubusercontent.com/4e44a98f6e0c0c6f9768b18d2c9f809a147896ce/68747470733a2f2f63646e302e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6a666b2f3531322f6368726f6d652d3531322e706e67" target="_blank"><img src="https://camo.githubusercontent.com/4e44a98f6e0c0c6f9768b18d2c9f809a147896ce/68747470733a2f2f63646e302e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6a666b2f3531322f6368726f6d652d3531322e706e67" width="50px" height="50px" alt="Chrome logo" data-canonical-src="https://cdn0.iconfinder.com/data/icons/jfk/512/chrome-512.png" style="max-width:100%;"></a></th>
@@ -29,7 +29,7 @@ Detects if the mouse of a user leaves the viewport / document borders of your we
 #### Cases:
 * if you are using gliojs, paste your project <a href="https://github.com/luisvinicius167/gliojs/issues/4"> here</a>.
 
-### Articles about Exit-popups:
+#### Articles about Exit-popups:
 * <a href="http://conversionsciences.com/blog/7-best-practices-using-exit-intent-popovers/">7 Best Practices for Using Exit-Intent Popovers, Popups</a>
 * <a href="http://blog.getrooster.com/5-scientific-reasons-exit-popups-freaking-effective/">5 Scientific Reasons Exit Popups Are So Freaking Effective</a>
 
