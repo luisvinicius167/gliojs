@@ -8,6 +8,10 @@ Detects if the mouse of a user leaves the viewport / document borders of your we
 * Give visitors reasons to stay!
 * Grab your users’ attention!
 
+### Articles about Exit-popups:
+* <a href="http://conversionsciences.com/blog/7-best-practices-using-exit-intent-popovers/">7 Best Practices for Using Exit-Intent Popovers, Popups</a>
+* <a href="http://blog.getrooster.com/5-scientific-reasons-exit-popups-freaking-effective/">5 Scientific Reasons Exit Popups Are So Freaking Effective</a>
+
 ## Install:
 #### Manual:
 *Import the library glio.min.js in 'dist' folder in your site. ```<script src='glio.min.js'></script>```
