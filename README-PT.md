@@ -1,7 +1,7 @@
 # glio.js
-Detecte se o mouse do usuário deixa as bordas do viewport ou documento de seu site e quando isso acontecer, dispare um callback.
+Detecte se o mouse do usuário for para as bordas do viewport/documento de seu site ou sair dele, e quando isso acontecer, dispare um callback.
 
-###  Como Funciona: <a href="http://luisvinicius167.github.io/gliojs/"> Demo </a>
+####  Como Funciona: <a href="http://luisvinicius167.github.io/gliojs/"> Demo </a>
 
 ### Razões para uso:
 * Aumentar suas taxas de conversão!
@@ -9,8 +9,14 @@ Detecte se o mouse do usuário deixa as bordas do viewport ou documento de seu s
 * Atrair a atenção de seus usuários!
 
 
-## Modo de Uso:
-Importe a biblioteca glio.min.js que está na pasta 'dist' dentro do seu site. ```<script src='glio.min.js'></script>```<br><br>
+## Como instalar:
+#### Manual:
+* Importe a biblioteca glio.min.js que está na pasta 'dist' dentro do seu site ```<script src='glio.min.js'></script>``` 
+
+#### Instale usando o Bower:
+* ``` bower install glio.js ```
+
+## Uso:
 Os argumentos são passados como um Array, onde o primeiro argumento dentro do array é a direção e o segundo é o callback. Você pode colocar até 5 arrays com cada posição dentro do método init. <br>
 ```glio( [ direction, callback ] )```.
 
@@ -70,3 +76,5 @@ Os argumentos são passados como um Array, onde o primeiro argumento dentro do a
  * heightTopRight: altura da direção 'top-right'. Quando o mouse do usuário tiver a altura menor ou igual a esse valor, o callback será disparado. <i>Padrão: 30.</i>
 
 ### Veja a demonstração <a href="http://luisvinicius167.github.io/gliojs/"> aqui</a>.
+
+MIT license.
