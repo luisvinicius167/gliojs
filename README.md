@@ -13,10 +13,15 @@ Detects if the mouse of a user leaves the viewport / document borders of your we
 * <a href="http://blog.getrooster.com/5-scientific-reasons-exit-popups-freaking-effective/">5 Scientific Reasons Exit Popups Are So Freaking Effective</a>
 
 ## Install:
-#### Manual:
-*Import the library glio.min.js in 'dist' folder in your site. ```<script src='glio.min.js'></script>```
+#### NPM:
+* ``` npm install gliojs ```
+ 
+
 #### Install using Bower:
 * ``` bower install glio.js ```
+
+#### Manual install:
+*Import the library glio.min.js in 'dist' folder in your site. ```<script src='glio.min.js'></script>```
 
 ## Usage:
 The arguments are a Arrays, where the first index is the direction and the second is a callback. <br>
