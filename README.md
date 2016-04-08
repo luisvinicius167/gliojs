@@ -1,5 +1,5 @@
 # gliojs
-Detects if the mouse of a user leaves the viewport / document borders of your website and when this happens, trigger your callback. <a href="https://github.com/luisvinicius167/gliojs/blob/master/README-PT.md"> Portuguese documentation. </a>
+Detects if the mouse of an user leaves the viewport / document borders of your website and when this happens, trigger your callback. <a href="https://github.com/luisvinicius167/gliojs/blob/master/README-PT.md"> Portuguese documentation. </a>
 
 <a href="http://luisvinicius167.github.io/gliojs/"> Demo. </a>
 
@@ -97,9 +97,9 @@ glio( [ direction, callback ] );
 
 #### Configurations:
   ```glio.config.key = value;``` Set the configuration before the <i>init</i>. 
- * screenWidthFragment: the quantity of parts the height and width screen will be divided. <i>Default: 12.</i>
- * centerTopHeight: height of 'top' direction. When the mouse is equal or major this value, the callback is triggered. <i>Default: 10.</i>
- * heightTopLeft: height of 'top-left' direction. When the mouse is equal or major this value, the callback is triggered. <i>Default: 30.</i>
- * heightTopRight: height of 'top-right' direction. When the mouse is equal or major this value, the callback is triggered. <i>Default: 30.</i>
+ * ```screenWidthFragment```: the quantity of parts the height and width screen will be divided. <i>Default: 12.</i>
+ * ```centerTopHeight```: height of 'top' direction. When the mouse is equal or major this value, the callback is triggered. <i>Default: 10.</i>
+ * ```heightTopLeft```: height of 'top-left' direction. When the mouse is equal or major this value, the callback is triggered. <i>Default: 30.</i>
+ * ```heightTopRight```: height of 'top-right' direction. When the mouse is equal or major this value, the callback is triggered. <i>Default: 30.</i>
 
 This software is licensed under the MIT License.
