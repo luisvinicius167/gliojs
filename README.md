@@ -1,4 +1,4 @@
-# glio.js
+# glio
 Detects if the mouse of an user leaves the viewport / document borders of your website and when this happens, trigger your callback. <a href="https://github.com/luisvinicius167/gliojs/blob/master/README-PT.md"> Portuguese documentation. </a>
 
 <a href="http://luisvinicius167.github.io/gliojs/"> Demo. </a>
