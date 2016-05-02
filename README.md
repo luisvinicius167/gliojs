@@ -36,8 +36,8 @@ Detects if the mouse of an user leaves the viewport / document borders of your w
 #### Install:
  
 * Npm: ``` npm install gliojs ```
- 
 * Bower:  ``` bower install gliojs ```
+* Cdn: ``` https://cdnjs.cloudflare.com/ajax/libs/gliojs/0.0.7/glio.min.js ```
 
 Import the library glio.min.js in 'dist' folder in your site. ```<script src='glio.min.js'></script>```
 
